@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Referral Form</title>
+    <style>
+        .tooltip {
+            position: relative;
+            display: inline-block;
+            cursor: pointer;
+        }
+
+        .tooltip .tooltiptext {
+            visibility: hidden;
+            width: 300px;
+            background-color: #555;
+            color: #fff;
+            text-align: center;
+            padding: 5px;
+            border-radius: 5px;
+            position: absolute;
+            z-index: 1;
+            bottom: 125%; /* Position the tooltip above the text */
+            left: 50%;
+            margin-left: -150px;
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+
+        .tooltip:hover .tooltiptext {
+            visibility: visible;
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+    <h2>Referral Form with Tooltips</h2>
+    <form action="mailto:Peter.Rasmussen@cornerpros.com" method="post" enctype="text/plain">
+
+       
+        <div class="tooltip">
+            <label for="Builder">Builder:</label>
+            <span class="tooltiptext">Name of the builder</span>
+        </div><br>
+        <input type="text" id="Builder" name="Builder" required><br><br>
+
+        <div class="tooltip">
+            <label for="Builder Address">Builder Address:</label>
+            <span class="tooltiptext">Street address of the builder</span>
+        </div><br>
+        <input type="text" id="Builder Address" name="Builder Address" required><br><br>
+
+        <div class="tooltip">
+            <label for="Builder City">Builder City:</label>
+            <span class="tooltiptext">City where the builder is located</span>
+        </div><br>
+        <input type="text" id="Builder City" name="Builder City" required><br><br>
+
+        <div class="tooltip">
+            <label for="Builder State">Builder State:</label>
+            <span class="tooltiptext">State where the builder is located</span>
+        </div><br>
+        <input type="text" id="Builder State" name="Builder State" required><br><br>
+
+        <div class="tooltip">
+            <label for="Builder Zip">Builder Zip:</label>
+            <span class="tooltiptext">Zip code of the builder</span>
+        </div><br>
+        <input type="text" id="Builder Zip" name="Builder Zip" required><br><br>
+
+        <div class="tooltip">
+            <label for="Insured">Insured:</label>
+            <span class="tooltiptext">Name of the insured</span>
+        </div><br>
+        <input type="text" id="Insured" name="Insured" required><br><br>
+
+        <div class="tooltip">
+            <label for="Insured Address">Insured Address:</label>
+            <span class="tooltiptext">Street address of the insured</span>
+        </div><br>
+        <input type="text" id="Insured Address" name="Insured Address" required><br><br>
+
+        <div class="tooltip">
+            <label for="Insured City">Insured City:</label>
+            <span class="tooltiptext">City where the insured is located</span>
+        </div><br>
+        <input type="text" id="Insured City" name="Insured City" required><br><br>
+
+        <div class="tooltip">
+            <label for="Insured State">Insured State:</label>
+            <span class="tooltiptext">State where the insured is located</span>
+        </div><br>
+        <input type="text" id="Insured State" name="Insured State" required><br><br>
+
+        <div class="tooltip">
+            <label for="Insured Zip">Insured Zip:</label>
+            <span class="tooltiptext">Zip code of the insured</span>
+        </div><br>
+        <input type="text" id="Insured Zip" name="Insured Zip" required><br><br>
+
+        <div class="tooltip">
+            <label for="State">State:</label>
+            <span class="tooltiptext">State where the project is located</span>
+        </div><br>
+        <input type="text" id="State" name="State" required><br><br>
+
+        <div class="tooltip">
+            <label for="County">County:</label>
+            <span class="tooltiptext">County where the project is located</span>
+        </div><br>
+        <input type="text" id="County" name="County" required><br><br>
+
+        <div class="tooltip">
+            <label for="Project Type">Project Type:</label>
+            <span class="tooltiptext">Type of project (e.g., New Construction, Remodel)</span>
+        </div><br>
+        <select id="Project Type" name="Project Type" required>
+            <option value="new single family">New Single Family</option>
+            <option value="single family renovation">Single Family Renovation</option>
+            <option value="commercial new">Commercial New</option>
+            <option value="commercial renovation">Commercial Renovation</option>
+        </select><br><br>
+
+        <div class="tooltip">
+            <label for="Project Address">Project Address:</label>
+            <span class="tooltiptext">Full address of the project location</span>
+        </div><br>
+        <input type="text" id="Project Address" name="Project Address" required><br><br>
+
+           <div class="tooltip">
+            <label for="Access to Fire Hydrant">Access to Fire Hydrant:</label>
+            <span class="tooltiptext">Yes/No indicating if there is access to a fire hydrant</span>
+        </div><br>
+        <input type="radio" id="FireHydrantYes" name="Access to Fire Hydrant" value="Yes" required>
+        <label for="FireHydrantYes">Yes</label>
+        <input type="radio" id="FireHydrantNo" name="Access to Fire Hydrant" value="No" required>
+        <label for="FireHydrantNo">No</label><br><br>
+
+        <div class="tooltip">
+            <label for="Access to Fire Station">Access to Fire Station:</label>
+            <span class="tooltiptext">Yes/No indicating if there is access to a fire station</span>
+        </div><br>
+        <input type="radio" id="FireStationYes" name="Access to Fire Station" value="Yes" required>
+        <label for="FireStationYes">Yes</label>
+        <input type="radio" id="FireStationNo" name="Access to Fire Station" value="No" required>
+        <label for="FireStationNo">No</label><br><br>
+
+        <div class="tooltip">
+            <label for="Wind Pool">Wind Pool:</label>
+            <span class="tooltiptext">Yes/No to indicate if located in a wind pool</span>
+        </div><br>
+        <input type="radio" id="WindPoolYes" name="Wind Pool" value="Yes" required>
+        <label for="WindPoolYes">Yes</label>
+        <input type="radio" id="WindPoolNo" name="Wind Pool" value="No" required>
+        <label for="WindPoolNo">No</label><br><br>
+        <div class="tooltip">
+            <label for="Inland/Coastal">Inland/Coastal:</label>
+            <span class="tooltiptext">Specify if the project is Inland or Coastal</span>
+        </div><br>
+        <input type="text" id="Inland/Coastal" name="Inland/Coastal" required><br><br>
+
+        <div class="tooltip">
+            <label for="Protection Class (PC)">Protection Class (PC):</label>
+            <span class="tooltiptext">Protection class rating</span>
+        </div><br>
+        <input type="text" id="Protection Class (PC)" name="Protection Class (PC)" required><br><br>
+
+        <div class="tooltip">
+            <label for="Hydrant Distance">Hydrant Distance:</label>
+            <span class="tooltiptext">Distance to the nearest fire hydrant</span>
+        </div><br>
+        <input type="text" id="Hydrant Distance" name="Hydrant Distance" required><br><br>
+
+        <div class="tooltip">
+            <label for="Total Insured Value">Total Insured Value (Complete Value):</label>
+            <span class="tooltiptext">Total insured value for the project</span>
+        </div><br>
+        <input type="text" id="Total Insured Value" name="Total Insured Value" required><br><br>
+
+         <div class="tooltip">
+            <label for="AOP Deductible">AOP Deductible:</label>
+            <span class="tooltiptext">All Other Perils deductible amount</span>
+        </div><br>
+        <select id="AOP Deductible" name="AOP Deductible" required>
+            <option value="$1,000">$1,000</option>
+            <option value="$2,500">$2,500</option>
+            <option value="$5,000">$5,000</option>
+            <option value="Other">Other</option>
+        </select><br><br>
+
+        <div class="tooltip">
+            <label for="Wind/Hail Deductible">Wind/Hail Deductible:</label>
+            <span class="tooltiptext">Wind and hail deductible percentage</span>
+        </div><br>
+        <select id="Wind/Hail Deductible" name="Wind/Hail Deductible" required>
+            <option value="None">None</option>
+            <option value="1%">1%</option>
+            <option value="2%">2%</option>
+            <option value="5%">5%</option>
+            <option value="10%">10%</option>
+        </select><br><br>
+
+        <div class="tooltip">
+            <label for="Building Type">Building Type:</label>
+            <span class="tooltiptext">Type of building (e.g., Single Family, Commercial)</span>
+        </div><br>
+        <input type="text" id="Building Type" name="Building Type" required><br><br>
+
+        <div class="tooltip">
+            <label for="Square Footage">Square Footage:</label>
+            <span class="tooltiptext">Total square footage of the building</span>
+        </div><br>
+        <input type="text" id="Square Footage" name="Square Footage" required><br><br>
+
+        <div class="tooltip">
+            <label for="Stories">Stories:</label>
+            <span class="tooltiptext">Number of stories</span>
+        </div><br>
+        <input type="text" id="Stories" name="Stories" required><br><br>
+
+        <div class="tooltip">
+            <label for="Construction Type">Construction Type:</label>
+            <span class="tooltiptext">Type of construction (e.g., Frame, Metal, Masonry)</span>
+        </div><br>
+        <input type="text" id="Construction Type" name="Construction Type" required><br><br>
+
+        <div class="tooltip">
+            <label for="Prior Builders Risk Losses">Any Prior Builders Risk Losses over $10,000?</label>
+            <span class="tooltiptext">Indicate if there have been any prior losses over $10,000</span>
+        </div><br>
+        <input type="text" id="Prior Builders Risk Losses" name="Prior Builders Risk Losses" required><br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
